@@ -17,5 +17,5 @@ int secondValue = (enterNumber() / 10) % 10;
 Console.WriteLine("Вторая цифра числа = " + secondValue);
 
         
-
+// помучались как обычно с гит...
  
