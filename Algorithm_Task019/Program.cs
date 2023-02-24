@@ -7,6 +7,7 @@ Console.WriteLine("Введите число" + " ");
 string number = Console.ReadLine();
 checkPalindrom(number);
 
+
 //Проверка введенного числа на палиндром
 bool checkPalindrom(string number)
    {    
