@@ -10,19 +10,19 @@ checkPalindrom(number);
 
 //Проверка введенного числа на палиндром
 bool checkPalindrom(string number)
-   {    
-       for (int i = 0; i < (number.Length / 2); i++)
-       {
+{
+    for (int i = 0; i < (number.Length / 2); i++)
+    {
         int j = (number.Length - 1) - i;
-        if (number[i] != number[j]) 
-            {
-             Console.WriteLine("Число не является палиндромом!"); 
-             return false;
-            }
-       }     
-     Console.WriteLine("Это палиндром!");  
-     return true;     
-   } 
+        if (number[i] != number[j])
+        {
+            Console.WriteLine("Число не является палиндромом!");
+            return false;
+        }
+    }
+    Console.WriteLine("Это палиндром!");
+    return true;
+}
 
 
 
