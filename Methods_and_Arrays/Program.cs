@@ -39,15 +39,16 @@ int newRandomArr (int[] randomArr)
        return newResultRand;
     }
 
-// 3.3 Заполним пустой массив вручную - НЕ ПОЛУЧАЕТСЯ ВЫВЕСТИ ВСЕ ЭЛЕМЕНТЫ РАЗОМ ПОСЛЕ ВВОДА
-int[] newManualArr (int[] manualArr) 
+// 3.3 Заполним пустой массив вручную 
+string newManualArr (int[] manualArr) 
     { 
         Console.WriteLine("Введите " + manualArr.Length + " элемента(ов)" + " ");
         for (int i = 0; i < manualArr.Length; i++)
             {
               manualArr[i] = Convert.ToInt32(Console.ReadLine()); 
             }            
-      return manualArr; //???
+        string result = String.Join(", ", manualArr);
+      return result;
     }
 
 int size = getNumber("Введите размер массива ");  //задаем размер массива
