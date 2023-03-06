@@ -9,7 +9,12 @@ double x = -(b1 - b2) / (k1 - k2);
 double y = k1 * x + b1;
 x = Math.Round(x, 3);
 y = Math.Round(y, 3);
-Console.WriteLine($"Пересечение в точке: ({x};{y})");
+if (k1 == k2) 
+    {
+        if (b1 == b2) Console.WriteLine("прямые совпадают");
+        else  Console.WriteLine("прямые параллельны");
+    }
+else Console.WriteLine($"Пересечение в точке: ({x};{y})");
 }
 
 Console.Write("Введите k1: ");
