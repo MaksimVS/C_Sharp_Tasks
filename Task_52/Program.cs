@@ -9,7 +9,7 @@ void Calculator(int[,] array)
 {
     int sum = 0;
     double calk = 0;
-    System.Console.WriteLine($" Среднее арифметичсекое столбцов равно: ");
+    System.Console.WriteLine($" Среднее арифметическое столбцов равно: ");
     for(int i = 0; i<array.GetLength(1);i++)
     {
         for(int j = 0; j<array.GetLength(0); j++)
