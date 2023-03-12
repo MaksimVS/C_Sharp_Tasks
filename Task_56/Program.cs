@@ -21,7 +21,29 @@ void FillPrintTable(int[,] array)
     }
 }
 
+int SumOfLineElements(int[,] array)
+{
+    int result = 0;
+    for (int i = 0; i < array.GetLength(0); i++)
+    {
+        int sum = 0;
+        for (int j = 0; j < array.GetLength(1); j++)
+        {
+            sum = sum + array[i, j];
+        }
+        if (result < sum)
+        {
+            result = sum;
+        }
+        Console.WriteLine();
+    }
+    Console.WriteLine(result);
+    return result; 
+}
+
+
 Console.Write("введите число отображающее количество строк и столбцов ,,квадратного,, массива:  ");
 int variable = Convert.ToInt32(Console.ReadLine());
 int[,] numbers = new int[variable, variable];
 FillPrintTable(numbers);
+SumOfLineElements(numbers);
