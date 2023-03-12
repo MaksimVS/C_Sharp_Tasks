@@ -23,6 +23,7 @@ void FillPrintTable(int[,] array)
 
 int SumOfLineElements(int[,] array)
 {
+    int resultLine = 0;
     int result = 0;
     for (int i = 0; i < array.GetLength(0); i++)
     {
@@ -34,13 +35,12 @@ int SumOfLineElements(int[,] array)
         if (result < sum)
         {
             result = sum;
+            resultLine = i;
         }
-        Console.WriteLine();
     }
-    Console.WriteLine(result);
-    return result; 
+    Console.WriteLine("Наибольшая сумма: " + result + " в строке с индексом: " + resultLine);
+    return result;
 }
-
 
 Console.Write("введите число отображающее количество строк и столбцов ,,квадратного,, массива:  ");
 int variable = Convert.ToInt32(Console.ReadLine());
